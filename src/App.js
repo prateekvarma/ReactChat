@@ -1,10 +1,16 @@
-import './App.css';
+import { ChatEngine } from "react-chat-engine";
+import "./App.css";
 
 function App() {
+  const projectID = process.env.REACT_APP_CHAT_ENGINE_PROJECT_ID;
+  const userSecret = process.env.REACT_APP_USER_PWD;
   return (
-    <div className="App">
-      <h1>Hello React</h1>
-    </div>
+    <ChatEngine
+      height="100hv"
+      projectID={projectID}
+      userName="johndoe"
+      userSecret={userSecret}
+    />
   );
 }
 
