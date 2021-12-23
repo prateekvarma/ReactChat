@@ -10,6 +10,7 @@ function App() {
       projectID={projectID}
       userName="johndoe"
       userSecret={userSecret}
+      renderChatFeed = {(chatAppProps) => <ChatFeed {...chatAppProps} />}
     />
   );
 }
