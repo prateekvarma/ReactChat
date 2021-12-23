@@ -1,5 +1,6 @@
 import { ChatEngine } from "react-chat-engine";
 import "./App.css";
+import ChatFeed from "./components/ChatFeed";
 
 function App() {
   const projectID = process.env.REACT_APP_CHAT_ENGINE_PROJECT_ID;
